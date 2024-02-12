@@ -27,6 +27,7 @@ body {
 /* Mobile menu */
 nav {
     display: flex;
+    background-color: #FFFFFF;
     justify-content: space-between;
     align-items: center;
     padding: 1rem;
@@ -153,9 +154,11 @@ nav {
     font-family: "Poppins", sans-serif;
     font-size: 1rem;
     font-weight: 400;
-    text-align: left;
+    text-align: center;
     line-height: 28px;
-    letter-spacing: 1px;
+    letter-spacing: 0px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 .cta {
@@ -345,7 +348,7 @@ nav {
 
 .title_message {
     gap: .8rem;
-    margin: 15px 20px;
+    margin: 15px 30px;
     text-align: left;
 }
 
@@ -363,7 +366,7 @@ nav {
     font-size: 1rem;
     font-weight: 400;
     line-height: 28px;
-    letter-spacing: 0.5px;
+    letter-spacing: 0px;
 }
 
 /* news and events section */
@@ -789,6 +792,7 @@ footer {
     .title_message {
         justify-content: flex-start;
         align-items: flex-start;
+        /* margin: 0px; */
     }
 
     .title_message h1 {
@@ -818,6 +822,8 @@ footer {
 }
 
 @media only screen and (min-width: 768px) {
+
+    /* Nav bar section */
     .menu_container {
         display: none;
     }
@@ -881,8 +887,8 @@ footer {
     /* Hero section */
     .hero_container {
         margin-top: 0;
-        margin-left: 50px;
-        margin-right: 50px;
+        margin-left: 20px;
+        margin-right: 20px;
         height: 660px;
     }
 
@@ -892,7 +898,7 @@ footer {
         background-repeat: no-repeat;
         background-size: contain;
         width: 100%;
-        height: 100%;
+        height: 660px;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -905,7 +911,7 @@ footer {
         justify-content: center;
         align-items: center;
         width: 100%;
-        height: 600px;
+        height: 480px;
         opacity: 0.5;
 
     }
@@ -913,7 +919,7 @@ footer {
     .hero_content p {
         color: #FFFFFF;
         font-family: "Poppins", sans-serif;
-        font-size: 44px;
+        font-size: 54px;
         font-weight: 600;
         text-align: center;
         line-height: 64px;
@@ -926,8 +932,6 @@ footer {
         justify-content: center;
         align-items: center;
         margin-top: 2.5rem;
-        margin-left: 200px;
-        margin-right: 200px;
     }
 
     .cta_heading h1 {
@@ -943,12 +947,14 @@ footer {
     .cta_content p {
         color: #36384E;
         font-family: "Poppins", sans-serif;
-        font-size: 1.5rem;
+        font-size: 13px;
         font-weight: 400;
         display: flex;
-        text-align: center;
+        text-align: left;
         line-height: 48px;
-        letter-spacing: 1px;
+        padding-left: 50px;
+        padding-right: 50px;
+        letter-spacing: 2px;
     }
 
     /* Steps section */
@@ -970,11 +976,11 @@ footer {
 
     .card {
         background-color: #FFFFFF;
-        padding: 1rem;
+        padding: .8rem;
         display: flex;
         justify-content: center;
         gap: 1rem;
-        max-width: 350px;
+        max-width: 300px;
         height: 140px;
     }
 
@@ -989,7 +995,7 @@ footer {
     }
 
     .card_content p {
-        font-size: 1rem;
+        font-size: 16px;
         line-height: 28px;
     }
 
@@ -999,8 +1005,8 @@ footer {
 
     /* Provost message */
     .green_card {
-        width: 490px;
-        height: 390px;
+        width: 410px;
+        height: 400px;
         border-radius: 10px;
         background-color: #219653;
         position: absolute;
@@ -1016,7 +1022,7 @@ footer {
 
     .provost_img_container img {
         width: 460px;
-        height: 420px;
+        height: 460px;
         z-index: 1;
     }
 
@@ -1050,15 +1056,73 @@ footer {
     .faqs_card {
         width: 800px;
     }
+
+    /* news and update section */
+    .news_events_card img {
+        width: 300px;
+        height: 160px;
+    }
+
+    /* footer section */
+    .hidden_desk_contact {
+        display: none;
+    }
+
+    .hidden_mobile_contact {
+        display: flex;
+    }
+
+    .footer_contents {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: flex-start;
+    }
+
+    .socials {
+        padding-top: 0;
+    }
+
+    .footer_contents .quick_links {
+        padding: 0;
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+
+    .footer_contents .quick_links li a {
+        padding: 0;
+        margin: 0;
+    }
+
+    .footer_line {
+        display: flex;
+        background-color: #FFFFFF;
+        width: 100%;
+        height: 0.42px;
+        margin: 1rem;
+    }
+
+    .copy_rights {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 2rem;
+    }
+
+    .copy_rights p {
+        color: #FFFFFF;
+        font-family: "Poppins", sans-serif;
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 10px;
+        text-transform: capitalize;
+        letter-spacing: 0.5px;
+    }
 }
 
 @media only screen and (min-width: 992px) {
 
     /* Hero section */
-    .hero_container {
-        margin-top: 10px;
-    }
-
     .hero {
         background-image: url("./assets/images/hero-image.png");
         background-position: center;
@@ -1069,7 +1133,6 @@ footer {
         display: flex;
         justify-content: center;
         align-items: center;
-
     }
 
     .hero_content {
@@ -1078,7 +1141,7 @@ footer {
         justify-content: center;
         align-items: center;
         width: 100%;
-        height: 470px;
+        height: 495px;
         opacity: 0.5;
 
     }
@@ -1176,7 +1239,7 @@ footer {
 
     /* Provost message */
     .green_card {
-        width: 480px;
+        width: 440px;
         height: 390px;
         border-radius: 10px;
         background-color: #219653;
@@ -1223,62 +1286,6 @@ footer {
         width: 300px;
         height: 200px;
     }
-
-     /* footer section */
-     .hidden_desk_contact {
-        display: none;
-    }
-
-    .hidden_mobile_contact {
-        display: flex;
-    }
-
-    .footer_contents {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-evenly;
-        align-items: flex-start;
-    }
-
-    .socials {
-        padding-top: 0;
-    }
-
-    .footer_contents .quick_links {
-        padding: 0;
-        align-items: flex-start;
-        justify-content: flex-start;
-    }
-
-    .footer_contents .quick_links li a {
-        padding: 0;
-        margin: 0;
-    }
-
-    .footer_line {
-        display: flex;
-        background-color: #FFFFFF;
-        width: 100%;
-        height: 0.42px;
-        margin: 1rem;
-    }
-
-    .copy_rights {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding: 2rem;
-    }
-
-    .copy_rights p {
-        color: #FFFFFF;
-        font-family: "Poppins", sans-serif;
-        font-size: 1rem;
-        font-weight: 400;
-        line-height: 10px;
-        text-transform: capitalize;
-        letter-spacing: 0.5px;
-    }
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
@@ -1308,7 +1315,7 @@ footer {
         justify-content: center;
         align-items: center;
         width: 100%;
-        height: 600px;
+        height: 630px;
         opacity: 0.5;
 
     }
