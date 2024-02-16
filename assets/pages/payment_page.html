@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FNPH Portal - Payment</title>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="../css/payment_page.css">
+</head>
+
+<body>
+    <nav>
+        <div class="logo_container">
+            <img src="../images/shool-logo.png" alt="">
+        </div>
+
+        <div class="nav_container">
+            <ul class="nav">
+                <li class="nav_item">
+                    <a href="/index.html">home</a>
+                </li>
+                <li class="nav_item">
+                    <a href="./admission.html">admission</a>
+                </li>
+                <li class="nav_item">
+                    <a href="">about us</a>
+                </li>
+                <li class="nav_item">
+                    <a href="">programes</a>
+                </li>
+                <li class="nav_item">
+                    <a href="">contact</a>
+                </li>
+            </ul>
+        </div>
+        <div class="utils">
+            <div class="portal_btn">
+                <a href="">Portal</a>
+            </div>
+            <div class="menu_container">
+                <span class="material-symbols-outlined">
+                    menu
+                </span>
+            </div>
+        </div>
+    </nav>
+    <!-- Hero section -->
+    <section class="hero_section"></section>
+    <!-- Main -->
+    <main class="main_section">
+        <section id="card">
+            <div class="form_heading">
+                <h3>payment</h3>
+            </div>
+            <div class="pay_with">
+                <h4>pay with:</h4>
+            </div>
+            <div class="radio_container">
+                <label for="card">
+                    <input type="radio" name="card" id="form_radio" checked>
+                    card
+                </label>
+                <label for="bank">
+                    <input type="radio" name="bank" id="form_radio">
+                    bank
+                </label>
+                <label for="transfer">
+                    <input type="radio" name="transfer" id="form_radio">
+                    transfer
+                </label>
+            </div>
+            <div class="card_number_container">
+                <label for="card-number">card number</label>
+                <input type="text" name="card-number" placeholder="1234 5678 91011 1121" class="card-number"
+                    id="card-number" maxlength="19" required onkeypress="return event.charCode >= 48 &&
+                event.charCode <= 57">
+            </div>
+            <div class="infos_container">
+                <div class="expiration_container">
+                    <label for="country">expiration date</label>
+                    <input type="" name="expiration-date" id="expiration-date" placeholder="MM/YY" maxlength="5"
+                        required onkeypress="return event.charCode >= 48 &&
+                    event.charCode <= 57">
+                </div>
+                <div class="cvv_container">
+                    <label for="cvv">cvv</label>
+                    <input type="text" name="cvv" placeholder="123" id="card_cvv" maxlength="3" required onkeypress="return event.charCode >=48 &&
+                    event.charCode <= 57">
+                </div>
+            </div>
+
+            <div class="save_checkbox">
+                <input type="checkbox" name="save-card" id="">
+                <label for="save-card">save card details</label>
+            </div>
+            <div class="form_btn">
+                <button type="submit">
+                    pay NGN10,000
+                </button>
+            </div>
+
+            <div class="form_text">
+                <p>
+                    Your personal data will be used to process your order,
+                    support your experience throughout this website, and for
+                    other purposes described in our privacy policy.
+                </p>
+            </div>
+            <div class="term_container">
+                <a href="#">Terms and conditions</a>
+                <a href="#">Privacy policy</a>
+            </div>
+        </section>
+    </main>
+    <!-- footer -->
+    <footer>
+        <div class="footer_contents">
+            <div class="footer_logo">
+                <img src="../images/footer-logo.png" alt="FNPH logo">
+            </div>
+            <ul class="quick_links">
+                <li class="title">
+                    <span>quick links</span>
+                </li>
+                <li>
+                    <a href="#">FNPH</a>
+                </li>
+                <li>
+                    <a href="#">KDSG</a>
+                </li>
+                <li>
+                    <a href="#">Ministry of Health</a>
+                </li>
+            </ul>
+
+            <ul class="contact_details">
+                <li class="title">
+                    <span>contact us</span>
+                </li>
+                <li class="hidden_mobile_contact">
+                    <span>Call us on: 123-456-7890</span>
+                </li>
+                <li class="hidden_mobile_contact">
+                    <span>e-mail: admin@portal.com</span>
+                </li>
+                <li class="hidden_desk_contact">
+                    <p><span>hotel reservation:</span> 123-456-7890</p>
+                </li>
+                <li class="hidden_desk_contact">
+                    <p><span>ticket office:</span> 123-456-7890</p>
+                </li>
+            </ul>
+
+            <div class="socials">
+                <p class="title">social</p>
+                <ul class="social_handles">
+                    <li>
+                        <a href="#">
+                            <img src="../svgs/fb.svg" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="../svgs/instagram-logo.svg" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="../svgs/bxl-twitter.svg" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="../svgs/youtube-logo.svg" alt="">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer_line"></div>
+        <div class="copy_rights">
+            <p><span>&copy;</span> 2024 FNHP | All Rights Reserved</p>
+        </div>
+    </footer>
+    <script src="../js/checkout.js">
+    </script>
+</body>
+
+</html>
