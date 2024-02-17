@@ -287,7 +287,7 @@ input[type=radio]:checked {
 }
 
 
-.save_checkbox {
+.save_checkbox label {
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -317,11 +317,26 @@ input[type=checkbox] {
     transition: .3s;
 }
 
+input[type=checkbox]:checked {
+    border-color: var(--c);
+    background-size: 100% 100%;
+}
+
+@media print {
+    input[type=checkbox] {
+        -webkit-appearance: auto;
+        -moz-appearance: auto;
+        appearance: auto;
+        background: none;
+    }
+}
+
 .form_btn button {
     background: #32C770;
     border-radius: 2.81px;
     border: 1px solid #32C770;
     color: #FFFFFF;
+    cursor: pointer;
     padding: .8rem 0;
     width: 100%;
     text-transform: uppercase;
@@ -666,8 +681,8 @@ footer {
         gap: 40px;
         align-items: center;
         position: absolute;
-        left: 150px;
-        bottom: 0px;
+        left: 200px;
+        bottom: -200px;
     }
 
     .term_container a {
